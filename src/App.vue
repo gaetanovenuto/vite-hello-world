@@ -6,7 +6,9 @@
     3) Utilizzo del componente
 */
 
-import AppHeader from './components/AppHeader.vue';
+
+import AppTitle from './components/AppTitle.vue';
+import AppHero from './components/AppHero.vue';
 
 export default {
   data() {
@@ -15,19 +17,16 @@ export default {
     }
   },
   components: {
-    AppHeader
+    AppTitle,
+    AppHero
     }
 }
 </script>
 
 <!-- All'interno del template ci va un solo elemento -->
-<template> 
-  <div>
-    <AppHeader />
-    <h1> 
-      
-    </h1>
-  </div>
+<template>  
+    <AppTitle />
+    <AppHero />
 </template>
 
 <style scoped>
